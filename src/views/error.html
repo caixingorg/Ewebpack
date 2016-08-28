@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/error.css">
+</head>
+<body>
+	@@include('header.inc')
+	<h1><%= message %></h1>
+	<h2><%= error.status %></h2>
+	<pre><%= error.stack %></pre>
+	@@include('footer.inc')
+	<script src="scripts/error.js"></script>
+</body>
+</html>
